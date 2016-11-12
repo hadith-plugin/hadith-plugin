@@ -1,8 +1,8 @@
 {
-	"name": "Hadith Online | حديث أون لاين",
+	"name": "__MSG_appName__",
 	"version": "0.0.2",
 	"manifest_version": 2,
-	"description": "A plugin to check Hadith status. Our database has about 40,000 Hadith from different references: Sahih Bukhari, Sahih Muslim, Jami` at-Tirmidhi, Sunan Abu Dawud, Sunan Ibn Majah and we're working hard to add more references and improving the search quality. | إضافة للتحقق من صحة الأحاديث. لدينا حوالي ٤٠٠٠٠ حديث من مختلف كتب الحديث: صحيح البخاري وصحيح مسلم وسنن ابن ماجه و سنن أبو داوود وجامع الترمذي ونعمل بجد على إضافة المزيد من الكتب وعلى تحسن جودة البحث",
+	"description": "__MSG_appDescription__",
 	"icons": {
 		"16": "images/icon-16.png",
 		"128": "images/icon-128.png"
