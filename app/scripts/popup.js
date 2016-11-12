@@ -1,7 +1,4 @@
 /* global chrome*/
-'use strict';
-
-console.log('\'Allo \'Allo! Popup');
 
 /* ########################################################################## */
 /* ########################### Core functionality  ########################## */
@@ -13,8 +10,10 @@ console.log('\'Allo \'Allo! Popup');
  * @return {void}
  */
 function sendServiceRequest(selectedText) {
-  const serviceCall = 'http://www.islamweb.net/mainpage/newsearch.php?page=result&q=' + selectedText;
-  chrome.tabs.create({url: encodeURI(serviceCall)});
+  const query = encodeURIComponent(selectedText);
+  const serviceCall = chrome.extension.getURL(`../results.html?q=${query}`);
+
+  chrome.tabs.create({url: serviceCall});
 }
 
 const query = {active: true, currentWindow: true};
