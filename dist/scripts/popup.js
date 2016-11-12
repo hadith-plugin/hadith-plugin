@@ -1,0 +1,1 @@
+"use strict";function sendServiceRequest(e){var t=encodeURIComponent(e),r=chrome.extension.getURL("../results.html?q="+t);chrome.tabs.create({url:r})}var query={active:!0,currentWindow:!0};chrome.tabs.query(query,function(e){var t=e[0];chrome.tabs.sendRequest(t.id,{message:"getSelection"},function(e){var t=e.data.trim();t&&sendServiceRequest(e.data)})});
